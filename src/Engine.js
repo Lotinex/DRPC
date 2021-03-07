@@ -18,7 +18,7 @@ function Main(){
 
     mainWindow.loadURL(Path.resolve(__dirname, 'Front/view.html'))
     Electron.Menu.setApplicationMenu(null)
-    mainWindow.webContents.openDevTools()
+    // mainWindow.webContents.openDevTools()
 
     Electron.ipcMain.on('OK', (event, data) => {
         RPC.login({clientId: data.id}).then(c => {
