@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPRC</title>
+    <link rel="stylesheet" href="front.css">
+    <script src="https://kit.fontawesome.com/33f06ad48a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="head">
+        DPRC v1.0.0
+        <i id="info" class="fas fa-info-circle" title="도움말 보기"></i>
+    </div>
+    <div id="settings">
+        <div class="group">
+            <div class="group-title">기본 설정</div>
+            <div class="group-body">
+                <div class="input">
+                    <span class="input-label">ID</span>
+                    <input class="pure-input" id="id">
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="group-title">텍스트 설정</div>
+            <div class="group-body">
+                <div class="input">
+                    <span class="input-label">상세</span>
+                    <input class="pure-input" id="detail">
+                </div>
+
+                <div class="input">
+                    <span class="input-label">상태</span>
+                    <input class="pure-input" id="status">
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="group-title">이미지 설정 (큼)</div>
+            <div class="group-body">
+                <div class="input">
+                    <span class="input-label">식별자</span>
+                    <input class="pure-input" id="image-L-id">
+                </div>
+
+                <div class="input">
+                    <span class="input-label">설명</span>
+                    <input class="pure-input" id="image-L-text">
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="group-title">이미지 설정 (작음)</div>
+            <div class="group-body">
+                <div class="input">
+                    <span class="input-label">식별자</span>
+                    <input class="pure-input" id="image-S-id">
+                </div>
+
+                <div class="input">
+                    <span class="input-label">설명</span>
+                    <input class="pure-input" id="image-S-text">
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="group-title">기타 설정</div>
+            <div class="group-body">
+                <div class="input">
+                    <span class="input-label">시간 표시</span>
+                    <input class="pure-input" type="checkbox" id="time">
+                </div>
+            </div>
+        </div>
+        <div class="tail">
+            <div class="pure-button" id="OK">
+                <i class="fas fa-check"></i>
+                적용!
+            </div>
+        </div>
+    </div>
+    <script src="front.js"></script>
+</body>
+</html>
